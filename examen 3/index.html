@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante XYZ - Hacer Pedido</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/image.png" alt="">
+      <h1>restaurante zibu </h1>
+    </header>
+    <div class="container">
+      <div>
+        <h2>Menú</h2>
+        <div class="menu-item">
+          <span>Pasta Mex Thai - $310</span>
+          <button onclick="addToCart('Pasta Mex Thai', 310)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Pasta Mex Thai con Camarón - $460</span>
+          <button onclick="addToCart('Pasta Mex Thai con Camarón', 460)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Salmón al Curry Rojo - 480</span>
+          <button onclick="addToCart('Salmón al Curry Rojo', 480)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Pescado Ceram - $600</span>
+          <button onclick="addToCart('Pescado Ceram', 600)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Rack de Cordero - $1,010</span>
+          <button onclick="addToCart('Rack de Cordero', 1010)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Short Rib - $1,520</span>
+          <button onclick="addToCart('Short Rib', 1520)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Rib Eye - $1,200</span>
+          <button onclick="addToCart('Rib Eye ', 1200)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Cola de Langosta Sipadan - $1,620</span>
+          <button onclick="addToCart('Cola de Langosta Sipadan', 1620)">Agregar</button>
+        </div>
+      </div>
+      <div class="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items"></ul>
+        <strong>Total: $<span id="total">0</span></strong>
+      </div>
+      <div class="order-details" id="order-details" style="display: none">
+        <!-- Sección de detalles de pedido -->
+        <h3>Detalles del Pedido</h3>
+        <p id="order-name"></p>
+        <p id="order-address"></p>
+        <ul id="order-summary"></ul>
+        <strong>Total: $<span id="order-total"></span></strong>
+      </div>
+      <div class="form-container">
+        <h2>Información de Pedido</h2>
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Nombre Completo"
+          required
+        />
+        <input
+          type="text"
+          id="customer-address"
+          placeholder="Dirección"
+          required
+        />
+        <button onclick="submitOrder()">Enviar Pedido</button>
+      </div>
+    </div>
+    <script>
+      const cart = [];
+      let total = 0; // Variable para mantener el total del pedido
+
+    
+
+    </script>
+   <script src="./assets/js/main.js"></script>
+  </body>
+</html>
